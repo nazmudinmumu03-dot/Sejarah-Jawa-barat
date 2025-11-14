@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Jawa Barat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+           
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sejarah Jawa Barat</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('page1')">Pendahuluan</a>
+        <a href="#" onclick="showPage('page2')">Kerajaan Sunda</a>
+        <a href="#" onclick="showPage('page3')">Kolonialisme Belanda</a>
+        <a href="#" onclick="showPage('page4')">Perjuangan Kemerdekaan</a>
+    </nav>
+
+    <div class="content" id="page1">
+        <h2>Pendahuluan</h2>
+        <p>Sejarah Jawa Barat mencakup berbagai peristiwa penting, mulai dari zaman prasejarah hingga periode modern. Provinsi ini memiliki banyak warisan budaya dan sejarah yang berharga.</p>
+    </div>
+
+    <div class="content" id="page2">
+        <h2>Kerajaan Sunda</h2>
+        <p>Kerajaan Sunda adalah kerajaan yang terletak di bagian barat pulau Jawa. Kerajaan ini memiliki peran penting dalam sejarah Jawa Barat dan memiliki hubungan dengan kerajaan-kerajaan besar lainnya di Indonesia.</p>
+		
+      <img src="1.jpg" alt="Prasasti Tugu">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Candi_Bojongmenje.jpg" alt="">
+	  <img src="4.jpg" alt="Prasasti Tugu">
+    </div>
+  </section>
+    </div>
+
+    <div class="content" id="page3">
+        <h2>Kolonialisme Belanda</h2>
+        <p>Selama masa penjajahan Belanda, Jawa Barat mengalami perubahan signifikan, baik dalam hal ekonomi, sosial, maupun budaya. Beberapa perlawanan terhadap penjajah Belanda juga terjadi di wilayah ini.</p>
+		<img src="5.jpg" alt="Prasasti Tugu">
+    </div>
+
+    <div class="content" id="page4">
+        <h2>Perjuangan Kemerdekaan</h2>
+        <p>Jawa Barat juga memiliki peran besar dalam perjuangan kemerdekaan Indonesia. Banyak pertempuran dan perjuangan yang terjadi di wilayah ini, termasuk peran serta para pahlawan lokal dalam memperjuangkan kemerdekaan.</p>
+		<p> galery poto para perjuangan untuk meraih kemerdekaan.</p>
+      <img src="2.jpg" alt="Prasasti Tugu">
+	  
+	  <img src="3.jpg" alt="Prasasti Tugu">
+		
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sejarah Jawa Barat</p>
+		<p>Di buat oleh mumu najmudin
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hiding all pages
+            const pages = document.querySelectorAll('.content');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Showing the selected page
+            const pageToShow = document.getElementById(pageId);
+            pageToShow.classList.add('active');
+        }
+
+        // Set the default page
+        showPage('page1');
+    </script>
+
+</body>
+</html>
